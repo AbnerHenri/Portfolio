@@ -2,12 +2,12 @@
 
 :root {
     --Black : #01040F;
-    --White : #FFFFFF;
+    --White : #F4F4F4;
     --Ghost : #CCCCCC;
     --Gray : #202024;
     --Blue : #006CFA;
 
-    --Shadow : rgb(0, 0, 0, 0.25);
+    --Shadow : rgb(0, 0, 0, 0.45);
 }
 
 body, html {
