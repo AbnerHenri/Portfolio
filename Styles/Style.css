@@ -12,7 +12,7 @@
     justify-content: space-around;
 }
 
-.Ball {
+.Polygon {
     position: relative;
     display: flex;
     justify-content: flex-end;
@@ -20,11 +20,12 @@
 
     flex-shrink: 0;
 
-    width: 150vh;
-    height: 150vh;
+    width: 170vh;
+    height: 130vh;
 
     background: var(--Blue);
-    border-radius: 50%;
+    -webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0 50%, 0% 0%);
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0 50%, 0% 0%);
 
     transform: translate(-40%, -20%); 
     box-shadow: 20px 40px var(--Shadow);
@@ -38,7 +39,7 @@
     flex-shrink: 0;
 
     text-align: center;
-    transform: translateX(-50%);
+    transform: translate(-75%, 10%);
 }
 
 .Ball-Apresentation > h1, h2 {
@@ -81,3 +82,7 @@
 }
 
 /* --------------------About-------------------- */
+
+.Box-About {
+    margin-top: 15vh;
+}
