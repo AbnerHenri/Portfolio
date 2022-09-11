@@ -1,0 +1,56 @@
+@import url('../Styles/Global.css');
+
+.Navbar {
+    position: fixed;
+    top : 20%;
+    right : 15px;
+
+    width: 100px;
+    height: 70vh;
+    float: right;
+}
+
+.Balloon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: var(--Blue);
+
+    transition-duration: 1s;
+}
+
+.Balloon > img {
+    width: 65%;
+}
+
+.Collect {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.Close {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: #FA002D;
+}
+
+.Close > img {
+    width : 65%
+}
