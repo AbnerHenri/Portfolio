@@ -8,6 +8,9 @@
     <title>Document</title>
 </head>
     <style>
+        @import url('./Styles/Global.css');
+
+
           html,
       body {
         position: relative;
@@ -24,16 +27,16 @@
       }
 
       .swiper {
-        width: 70%;
-        padding-top: 50px;
+        width: 60%;
+        padding-top: 150px;
         padding-bottom: 50px;
       }
 
       .swiper-slide {
         background-position: center;
         background-size: cover;
-        width: 20vw;
-        height: 25vw;
+        width: 275px;
+        height: 390px;
 
         border: 1px solid black;
         border-radius: 20px;
@@ -46,15 +49,17 @@
 
       .swiper-figure {
         width: 100%;
-        height: 50%;
+        height: 45%;
 
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
 
-        background-color: #202024;
+        background-color: var(--Blue);
         border-radius: 20px 20px 0px 0px;
+
+        border-bottom: 1px solid black;
       }
 
       .swiper-figure > img {
@@ -62,14 +67,39 @@
         height: 60px;
       }
 
+      .swiper-figure > h1 {
+        color : var(--White);
+        font-weight: 500;
+      }
+
       .swiper-description {
         width: 100%;
-        height: 50%;
+        height: 55%;
 
+        background-color: var(--White);
+        border-radius: 0px 0px 20px 20px;
+        
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-around;
+        justify-content: center;
+      }
+
+      .swiper-description > p {
+        font-size: 13px;
+        text-align: center;
+        max-width: 90%;
+        min-height: 50%;
+      }
+
+      .button-more {
+        width: 50%;
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
+
+        color: var(--White);
+        background: var(--Blue);
       }
 
     </style>
@@ -77,31 +107,95 @@
 
 <div class="swiper mySwiper">
     <div class="swiper-wrapper">
+
         <div class="swiper-slide">
             <div class="swiper-figure">
                 <img src="https://source.unsplash.com/random/250x250/?sky" />
-                <h2>Test</h2>
+                <h1>Memory Game</h1>
             </div>
             <div class="swiper-description">
-                aaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+                    dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
+                </p>
 
-                <button>More</button>
+                <button class="button-more">More</button>
             </div>
         </div>
+
         <div class="swiper-slide">
-            <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+            <div class="swiper-figure">
+                <img src="https://source.unsplash.com/random/250x250/?sky" />
+                <h1>Memory Game</h1>
+            </div>
+            <div class="swiper-description">
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard
+                    dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+                    type specimen
+                    book. It has survived not only five centuries, but also the leap into electronic typesetting
+                </p>
+        
+                <button class="button-more">More</button>
+            </div>
         </div>
+
         <div class="swiper-slide">
-            <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+            <div class="swiper-figure">
+                <img src="https://source.unsplash.com/random/250x250/?sky" />
+                <h1>Memory Game</h1>
+            </div>
+            <div class="swiper-description">
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard
+                    dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+                    type specimen
+                    book. It has survived not only five centuries, but also the leap into electronic typesetting
+                </p>
+        
+                <button class="button-more">More</button>
+            </div>
         </div>
+
         <div class="swiper-slide">
-            <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+            <div class="swiper-figure">
+                <img src="https://source.unsplash.com/random/250x250/?sky" />
+                <h1>Memory Game</h1>
+            </div>
+            <div class="swiper-description">
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard
+                    dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+                    type specimen
+                    book. It has survived not only five centuries, but also the leap into electronic typesetting
+                </p>
+        
+                <button class="button-more">More</button>
+            </div>
         </div>
+
         <div class="swiper-slide">
-            <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+            <div class="swiper-figure">
+                <img src="https://source.unsplash.com/random/250x250/?sky" />
+                <h1>Memory Game</h1>
+            </div>
+            <div class="swiper-description">
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard
+                    dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+                    type specimen
+                    book. It has survived not only five centuries, but also the leap into electronic typesetting
+                </p>
+        
+                <button class="button-more">More</button>
+            </div>
         </div>
-        <div class="swiper-slide">
-            <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+
+        
         </div>
     </div>
     <div class="swiper-pagination"></div>
@@ -115,11 +209,12 @@
             grabCursor: true,
             centeredSlides: true,
             slidesPerView: "auto",
+            initialSlide : 2,
             coverflowEffect: {
                 rotate: 0,
                 stretch: 0,
-                depth: 150,
-                modifier: 2,
+                depth: 180,
+                modifier: 3,
                 slideShadows: true,
             },
             pagination: {
