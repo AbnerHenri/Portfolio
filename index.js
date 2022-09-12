@@ -9,11 +9,11 @@ function CloseBalloons() {
 
     if (state == false) {
         Balloons.forEach((e) => {
-            e.classList = 'Balloon Collect'
+            e.classList = 'Balloon'
         })
     } else {
         Balloons.forEach((e) => {
-            e.classList = 'Balloon'
+            e.classList = 'Balloon Collect'
         })
     }
 
